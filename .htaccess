@@ -1,4 +1,4 @@
 RewriteEngine On
-RewriteRule ^$ /file.html [L]
+RewriteRule ^$ /home.html [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
