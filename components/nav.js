@@ -1,15 +1,15 @@
 class Nav extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
 
-  connectedCallback() {
+    connectedCallback() {
 
-    const page = this.getAttribute("page");
-    
-    let generatedHtml = "";
+        const page = this.getAttribute("page");
 
-    generatedHtml += `
+        let generatedHtml = "";
+
+        generatedHtml += `
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://rambolps.ca/">
@@ -18,19 +18,20 @@ class Nav extends HTMLElement {
             </span>
         </a>
 
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true">Test</span>
+        <a role="button" onClick="toggleMenu()" id="navBarBurger" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
     <div class="navbar-menu">
     `
-    
 
-    
-    if (page == "home") {
-            generatedHtml +=`
+
+
+        if (page == "home") {
+            generatedHtml += `
             <div class="navbar-start">
             <a class="navbar-item" href="https://rambolps.ca/">
                 <strong>Home</strong>
@@ -45,10 +46,10 @@ class Nav extends HTMLElement {
             </a>
             </div>
             `
-    }
+        }
 
-    if (page == "software") {
-        generatedHtml +=`
+        if (page == "software") {
+            generatedHtml += `
         <div class="navbar-start">
         <a class="navbar-item" href="https://rambolps.ca/">
             Home
@@ -63,10 +64,10 @@ class Nav extends HTMLElement {
         </a>
         </div>
         `
-    }
+        }
 
-    if (page == "hardware") {
-        generatedHtml +=`
+        if (page == "hardware") {
+            generatedHtml += `
         <div class="navbar-start">
         <a class="navbar-item" href="https://rambolps.ca/">
             Home
@@ -81,10 +82,10 @@ class Nav extends HTMLElement {
         </a>
         </div>
         `
-    }
+        }
 
-    
-    generatedHtml += `
+
+        generatedHtml += `
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
@@ -98,8 +99,32 @@ class Nav extends HTMLElement {
     </nav>
     `
 
-    this.innerHTML = generatedHtml;
-  }
+        this.innerHTML = generatedHtml;
+    }
 }
 
-  customElements.define('nav-component', Nav);
+customElements.define('nav-component', Nav);
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+        });
+    });
+
+});
