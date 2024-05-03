@@ -2,3 +2,6 @@ _site
 .jekyll-cache
 old
 tmp
+images/icons/linkedin.png
+images/icons/github.png
+images/icons/mail.png
