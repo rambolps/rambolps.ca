@@ -6,6 +6,7 @@ class Nav extends HTMLElement {
     connectedCallback() {
 
         const page = this.getAttribute("page");
+        const logo = this.getAttribute("logo");
 
         let generatedHtml = "";
 
@@ -14,7 +15,7 @@ class Nav extends HTMLElement {
     <div class="navbar-brand">
         <a class="navbar-item" href="https://rambolps.ca/">
             <span class="logoImg">
-                <img src="/images/logo.jpg" alt="">
+                <img src="${logo}" alt="">
             </span>
         </a>
 
@@ -37,11 +38,11 @@ class Nav extends HTMLElement {
                 <strong>Home</strong>
             </a>
 
-            <a class="navbar-item" href="/software.html">
+            <a class="navbar-item" href="/software">
                 Software
             </a>
 
-            <a class="navbar-item" href="/hardware.html">
+            <a class="navbar-item" href="/hardware">
                 Hardware
             </a>
             </div>
@@ -55,11 +56,11 @@ class Nav extends HTMLElement {
             Home
         </a>
 
-        <a class="navbar-item" href="/software.html">
+        <a class="navbar-item" href="/software">
             <strong>Software</strong>
         </a>
 
-        <a class="navbar-item" href="/hardware.html">
+        <a class="navbar-item" href="/hardware">
             Hardware
         </a>
         </div>
@@ -73,11 +74,11 @@ class Nav extends HTMLElement {
             Home
         </a>
 
-        <a class="navbar-item" href="/software.html">
+        <a class="navbar-item" href="/software">
             Software
         </a>
 
-        <a class="navbar-item" href="/hardware.html">
+        <a class="navbar-item" href="/hardware">
             <strong>Hardware</strong>
         </a>
         </div>
@@ -89,7 +90,7 @@ class Nav extends HTMLElement {
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary" href="/index.html">
+                    <a class="button is-primary" href="/">
                         <strong>View 3D</strong>
                     </a>
                 </div>
