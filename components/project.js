@@ -12,6 +12,7 @@ class Project extends HTMLElement {
 
     
     let generatedHtml = `
+    <div class="project">
     <a href="${link}">
     <div class="card">
   <div class="card-image">
@@ -35,6 +36,7 @@ class Project extends HTMLElement {
   </div>
 </div>
 </a>
+</div>
     `;
 
     this.innerHTML = generatedHtml;
