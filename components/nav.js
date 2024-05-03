@@ -18,14 +18,14 @@ class Nav extends HTMLElement {
             </span>
         </a>
 
-        <a role="button" onClick="toggleMenu()" id="navBarBurger" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+        <a role="button"" id="navBarBurger" class="navbar-burger"aria-label="menu" aria-expanded="false" data-target="navbarBurgerMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
         </a>
     </div>
-    <div class="navbar-menu">
+    <div id="navbarBurgerMenu" class="navbar-menu">
     `
 
 
@@ -106,7 +106,6 @@ class Nav extends HTMLElement {
 customElements.define('nav-component', Nav);
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
@@ -118,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Get the target from the "data-target" attribute
             const target = el.dataset.target;
+            console.log(target);
             const $target = document.getElementById(target);
 
             // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
