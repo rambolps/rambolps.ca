@@ -90,7 +90,7 @@ class Nav extends HTMLElement {
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary" href="/">
+                    <a class="button is-primary" href="https://3d.rambolps.ca/">
                         <strong>View 3D</strong>
                     </a>
                 </div>
