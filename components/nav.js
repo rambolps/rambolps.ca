@@ -13,7 +13,7 @@ class Nav extends HTMLElement {
         generatedHtml += `
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://rambolps.ca/">
+        <a class="navbar-item" href="/">
             <span class="logoImg">
                 <img src="${logo}" alt="">
             </span>
@@ -34,7 +34,7 @@ class Nav extends HTMLElement {
         if (page == "home") {
             generatedHtml += `
             <div class="navbar-start">
-            <a class="navbar-item" href="https://rambolps.ca/">
+            <a class="navbar-item" href="/">
                 <strong>Home</strong>
             </a>
 
@@ -52,7 +52,7 @@ class Nav extends HTMLElement {
         if (page == "software") {
             generatedHtml += `
         <div class="navbar-start">
-        <a class="navbar-item" href="https://rambolps.ca/">
+        <a class="navbar-item" href="/">
             Home
         </a>
 
@@ -70,7 +70,7 @@ class Nav extends HTMLElement {
         if (page == "hardware") {
             generatedHtml += `
         <div class="navbar-start">
-        <a class="navbar-item" href="https://rambolps.ca/">
+        <a class="navbar-item" href="/">
             Home
         </a>
 
