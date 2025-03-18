@@ -8,7 +8,7 @@ layout: wide
   {{< card
         link="/projects"
         title="Projects"
-        image="/images/circuit.png"
+        image="/images/controlcircuit.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"
   >}}
 {{< /cards >}}
