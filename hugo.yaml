@@ -23,3 +23,9 @@ menu:
       url: "https://github.com/rambolps"
       params:
         icon: github
+    - name: 3D
+      weight: 5
+      url: "https://3d.rambolps.ca/"
+      params:
+        icon: link
+    
