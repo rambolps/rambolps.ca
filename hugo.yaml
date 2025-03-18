@@ -18,14 +18,29 @@ menu:
       weight: 3
       params:
         type: search
-    - name: GitHub
+    - name: 3D
       weight: 4
+      url: "https://3d.rambolps.ca/"
+      params:
+        icon: cube-transparent
+    - name: GitHub
+      weight: 5
       url: "https://github.com/rambolps"
       params:
         icon: github
-    - name: 3D
-      weight: 5
-      url: "https://3d.rambolps.ca/"
-      params:
-        icon: link
-    
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: images/logo.jpg
+      dark: images/logo.jpg
+      link: /
+      width: 40
+      height: 20
+  theme:
+    # light | dark | system
+    default: dark
+    displayToggle: true
+

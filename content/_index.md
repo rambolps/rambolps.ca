@@ -1,7 +1,14 @@
 ---
-date: '2025-03-17T19:36:41-04:00'
-title: 'Rambolps'
+title: Portfolio Website
+toc: false
+layout: wide
 ---
 
-
-Test 5
+{{< cards >}}
+  {{< card
+        link="/projects"
+        title="Projects"
+        image="/images/circuit.png"
+        imageStyle="object-fit:cover; aspect-ratio:16/9;"
+  >}}
+{{< /cards >}}
