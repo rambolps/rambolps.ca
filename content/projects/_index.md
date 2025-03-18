@@ -31,7 +31,7 @@ layout: wide
         title="Progressive Taxation Calculator"
         subtitle="Pyhton program to calculate then report income tax in Canada"
         link="https://github.com/rambolps/Progressive-Taxation"
-        image="/images/screenTax.png"
+        image="/images/ptlogo.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"  
   >}}
   {{< card
@@ -45,7 +45,7 @@ layout: wide
         title="Home Security"
         subtitle="Home Security On ThinkerCAD"
         link="https://github.com/rambolps/Home-Security-Ardunio"
-        image="/images/thinkericon.png"
+        image="/images/tclogo.png"
         imageStyle="object-fit:cover; aspect-ratio:16/9;"  
   >}}
   
